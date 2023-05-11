@@ -58,7 +58,7 @@ function App() {
           <AuthContextProvider>
             <BrowserRouter>
               <Routes>
-                <Route element = {<SecureRoute />}>
+                {/* <Route element = {<SecureRoute />}> */}
                 <Route path="/overview" element={<Overview />}></Route>
                 
 
@@ -78,7 +78,7 @@ function App() {
                 <Route path="/patient/edit/:id" element={<PatientEdit />}></Route>
                 <Route path="/patients/:id" element={<PatientView />}></Route>
                 <Route path="/patient/new" element={<PatientCreate />}></Route>
-                </Route>
+                {/* </Route> */}
                 
                 <Route path="/nav" element={<NavbarMUI />}></Route> 
                 <Route path="/footer" element={<FooterMUI />}></Route> 
