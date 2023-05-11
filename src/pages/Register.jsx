@@ -18,7 +18,7 @@ const UserCreate = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const controller = new AbortController();
-    let url = `http://localhost:5000/api/register`;
+    let url = `${process.env.REACT_APP_API_URL}/register`;
 
     const requestOptions = {
       signal: controller.signal,
